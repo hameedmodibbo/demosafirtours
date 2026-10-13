@@ -5,7 +5,7 @@
    While this is empty, the WhatsApp button shows a demo message
    instead of opening a link.
    ========================================================== */
-const WHATSAPP_NUMBER = "3555322759";
+const WHATSAPP_NUMBER = "923555322759";
 
 (function () {
   "use strict";
