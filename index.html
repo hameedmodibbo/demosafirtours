@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Demo Safir Tours | Journeys across Pakistan (Website Demo)</title>
+<meta name="description" content="Concept website demo for Demu Safir Tours, a Pakistan-based travel business.">
+<meta name="theme-color" content="#064E3B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#home" aria-label="Demu Safir Tours, home">
+    <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="16" fill="none" stroke="#D4AF37" stroke-width="1.5"/><path d="M5 25 12 13l4 6 3-4 10 10Z" fill="#D4AF37"/><circle cx="23" cy="10" r="2.2" fill="#D4AF37"/></svg>
+    <span>Demo Safir<small>Tours</small></span>
+  </a>
+  <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+  <nav class="nav__menu" id="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#destinations">Destinations</a><a href="#experiences">Experiences</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <a class="btn btn--gold" href="#inquiry">Plan Your Trip</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero scene scene--hunza" id="home">
+  <img data-slot="hero" src="images/hero.jpg"  fetchpriority="high" width="1600" height="1000">
+  <div class="hero__shade"></div>
+  <div class="hero__content">
+    <p class="kicker">Travel across Pakistan</p>
+    <h1>Your Next Extraordinary Journey Begins Here.</h1>
+    <p class="hero__lead">Discover remarkable destinations, unforgettable experiences, and journeys thoughtfully planned around you.</p>
+    <div class="hero__actions"><a class="btn btn--gold" href="#destinations">Explore Destinations</a><a class="btn btn--ghost" href="#inquiry">Plan Your Trip</a></div>
+  </div>
+  <a class="hero__scroll" href="#destinations" aria-label="Scroll to destinations"><span></span></a>
+</section>
+
+<section class="section" id="destinations">
+  <div class="wrap">
+    <div class="head reveal"><h2>Places that change how you see the world.</h2><p>Four destinations to start dreaming about. Pick one and we will shape the rest around you.</p></div>
+    <div class="dest">
+      <article class="dest__item dest__item--a scene scene--hunza reveal"><img data-slot="hunza" loading="lazy" src="images/hunza.jpg" alt="Hunza Valley with terraced fields beneath snowy peaks" width="800" height="1000">
+        <div class="dest__text"><h3>Hunza Valley</h3><p>Orchards, ancient forts and peaks that glow at sunrise.</p><button class="link" data-dest="Hunza Valley">Plan a Hunza trip</button></div></article>
+      <article class="dest__item dest__item--b scene scene--skardu reveal"><img data-slot="skardu" loading="lazy" src="images/skardu.jpg" alt="Still blue lake in Skardu surrounded by mountains" width="1000" height="600">
+        <div class="dest__text"><h3>Skardu</h3><p>Turquoise lakes and the gateway to the Karakoram.</p><button class="link" data-dest="Skardu">Plan a Skardu trip</button></div></article>
+      <article class="dest__item dest__item--c scene scene--meadows reveal"><img data-slot="fairy" loading="lazy" src="images/fairy-meadows.jpg" alt="Alpine meadow facing Nanga Parbat at Fairy Meadows" width="800" height="700">
+        <div class="dest__text"><h3>Fairy Meadows</h3><p>Pine forest, open grass and Nanga Parbat in view.</p><button class="link" data-dest="Fairy Meadows">Plan a Fairy Meadows trip</button></div></article>
+      <article class="dest__item dest__item--d scene scene--swat reveal"><img data-slot="swat" loading="lazy" src="images/swat.jpg" alt="Green river valley in Swat" width="800" height="700">
+        <div class="dest__text"><h3>Swat Valley</h3><p>Rivers, meadows and soft green hills for slower days.</p><button class="link" data-dest="Swat Valley">Plan a Swat trip</button></div></article>
+    </div>
+    <p class="note">Illustrative destinations for this concept. Not confirmed tour offerings.</p>
+  </div>
+</section>
+
+<section class="section section--dark" id="experiences">
+  <div class="wrap">
+    <div class="head reveal"><h2>One way to travel does not fit everyone.</h2></div>
+    <div class="exp">
+      <article class="exp__item exp__item--lg scene scene--skardu reveal"><img data-slot="custom" loading="lazy" src="images/custom.jpg" alt="Traveler looking over a mountain valley" width="900" height="700"><div class="exp__text"><h3>Customized Tours</h3><p>Your pace, your interests, your route. Tell us what matters and the plan follows.</p></div></article>
+      <article class="exp__item scene scene--meadows reveal"><img data-slot="family" loading="lazy" src="images/family.jpg" alt="Family walking together in green hills" width="600" height="500"><div class="exp__text"><h3>Family Holidays</h3><p>Comfortable plans that keep every age happy.</p></div></article>
+      <article class="exp__item scene scene--swat reveal"><img data-slot="honeymoon" loading="lazy" src="images/honeymoon.jpg" alt="Couple at a quiet lakeside at sunset" width="600" height="500"><div class="exp__text"><h3>Honeymoon Getaways</h3><p>Quiet places and unhurried time together.</p></div></article>
+      <article class="exp__item exp__item--wide scene scene--hunza reveal"><img data-slot="group" loading="lazy" src="images/group.jpg" alt="Group of friends hiking on a mountain trail" width="1000" height="500"><div class="exp__text"><h3>Group Adventures</h3><p>Shared trails, shared stories, one organized trip.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="journeys">
+  <div class="wrap">
+    <div class="head reveal"><h2>Imagine yourself here.</h2><p>Sample journeys that show how a trip could be presented.</p></div>
+    <div class="journeys">
+      <article class="journey reveal"><div class="journey__img scene scene--hunza"><img data-slot="j1" loading="lazy" src="images/journey-1.jpg" alt="Road winding through the Hunza valley" width="700" height="500"></div><h3>Hunza, slow and scenic</h3><p>Viewpoints, village walks and long evenings in the valley.</p><p class="ph">Duration and price: placeholder</p><button class="link" data-dest="Hunza Valley">Explore Journey</button></article>
+      <article class="journey journey--offset reveal"><div class="journey__img scene scene--skardu"><img data-slot="j2" loading="lazy" src="images/journey-2.jpg" alt="Lake and rocky mountains near Skardu" width="700" height="500"></div><h3>Skardu and its lakes</h3><p>High-altitude water, desert dunes and big skies.</p><p class="ph">Duration and price: placeholder</p><button class="link" data-dest="Skardu">Explore Journey</button></article>
+      <article class="journey reveal"><div class="journey__img scene scene--meadows"><img data-slot="j3" loading="lazy" src="images/journey-3.jpg" alt="Pine trees and a mountain view at Fairy Meadows" width="700" height="500"></div><h3>Fairy Meadows escape</h3><p>A trek into the forest and a night under the mountain.</p><p class="ph">Duration and price: placeholder</p><button class="link" data-dest="Fairy Meadows">Explore Journey</button></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--ivory" id="about">
+  <div class="wrap about">
+    <div class="reveal"><h2>Why travel with Demu Safir Tours?</h2><p class="about__lead">Because a good trip starts with listening.</p></div>
+    <ul class="about__list reveal">
+      <li><h3>Built around you</h3><p>Your interests and budget shape the plan, not the other way round.</p></li>
+      <li><h3>Planned with care</h3><p>Routes, stays and timing considered before you leave home.</p></li>
+      <li><h3>For families and groups</h3><p>Plans that work for children, parents, friends and colleagues.</p></li>
+      <li><h3>Help along the way</h3><p>One conversation to start, support while you plan.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="inquiry">
+  <div class="wrap inquiry">
+    <div class="inquiry__intro reveal"><h2>Tell us where you want to go.</h2><p>Share a few details and we will turn them into a trip plan you can send in one tap.</p>
+      <p class="note">Demo only. Nothing on this form is sent to the business.</p></div>
+    <div class="inquiry__box reveal">
+      <form id="inquiryForm" novalidate>
+        <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-err"><p class="err" id="name-err" role="alert"></p></div>
+        <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-err"><p class="err" id="email-err" role="alert"></p></div>
+        <div class="field"><label for="phone">WhatsApp or phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+92 300 0000000" required aria-describedby="phone-err"><p class="err" id="phone-err" role="alert"></p></div>
+        <div class="row">
+          <div class="field"><label for="destination">Preferred destination</label><select id="destination" name="destination" required aria-describedby="destination-err"><option value="">Choose one</option><option>Hunza Valley</option><option>Skardu</option><option>Fairy Meadows</option><option>Swat Valley</option><option>Not sure yet</option></select><p class="err" id="destination-err" role="alert"></p></div>
+          <div class="field"><label for="type">Travel type</label><select id="type" name="type" required aria-describedby="type-err"><option value="">Choose one</option><option>Customized Tour</option><option>Family Holiday</option><option>Honeymoon Getaway</option><option>Group Adventure</option></select><p class="err" id="type-err" role="alert"></p></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="date">Departure date</label><input id="date" name="date" type="date" required aria-describedby="date-err"><p class="err" id="date-err" role="alert"></p></div>
+          <div class="field"><label for="travelers">Number of travelers</label><input id="travelers" name="travelers" type="number" min="1" max="50" inputmode="numeric" value="2" required aria-describedby="travelers-err"><p class="err" id="travelers-err" role="alert"></p></div>
+        </div>
+        <div class="field"><label for="notes">Additional travel preferences <span class="opt">(optional)</span></label><textarea id="notes" name="notes" rows="3"></textarea></div>
+        <button class="btn btn--green" type="submit">Create My Inquiry</button>
+      </form>
+      <div class="result" id="result" tabindex="-1" hidden>
+        <h3>Your inquiry summary</h3>
+        <p class="result__demo">This is a demonstration. Your inquiry has not been sent to anyone.</p>
+        <pre id="summary"></pre>
+        <div class="result__actions"><button class="btn btn--green" id="waBtn" type="button">Send on WhatsApp</button><button class="btn btn--line" id="editBtn" type="button">Edit details</button></div>
+        <p class="result__msg" id="waMsg" role="status"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="finale scene scene--meadows" id="contact-cta">
+  <img data-slot="finale" loading="lazy" src="images/finale.jpg" alt="Sunrise light over a mountain ridge" width="1600" height="900">
+  <div class="finale__shade"></div>
+  <div class="finale__content reveal"><h2>Some Journeys Stay With You Forever.</h2><p>Your next one could start with a single message.</p><a class="btn btn--gold" href="#inquiry">Let's Plan Your Journey</a></div>
+</section>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="wrap footer__grid">
+    <div><a class="brand" href="#home"><span>Demu Safir<small>Tours</small></span></a><p>Travel and tourism based in Pakistan. This page is a concept demo of a possible website.</p></div>
+    <nav aria-label="Footer"><h3>Explore</h3><a href="#destinations">Destinations</a><a href="#experiences">Experiences</a><a href="#about">About</a><a href="#inquiry">Plan Your Trip</a></nav>
+    <div><h3>Follow</h3><a href="https://www.facebook.com/fahadbaltisani" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/demosafirtours/" target="_blank" rel="noopener">Instagram</a></div>
+    <div><h3>Contact</h3><p class="ph">Phone: +92-3555322759</p><p class="ph">Email: demosafirtours@gmail.com</p><p class="ph">Address: pakistan</p></div>
+  </div>
+  <p class="footer__copy">&copy; <span id="year">2026</span> Demu Safir Tours.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
